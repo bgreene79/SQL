@@ -49,4 +49,4 @@ UPDATE FAC_LOG SET PAT_ID = (SELECT NEW_id FROM PAT_test WHERE PAT_TEST.ID =FAC_
 
 delete from PAT where PAT.id in (select PAT_test.id from PAT_test)
 
-rollback
+rollback   
